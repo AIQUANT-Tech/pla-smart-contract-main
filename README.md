@@ -1,6 +1,6 @@
 # Plastiks Smart Contracts — `SmartContract` folder
 
-**Repository:** `https://github.com/AIQUANT13/pla-smart-contract.git`
+**Repository:** [https://github.com/AIQUANT13/pla-smart-contract-main.git](https://github.com/AIQUANT-Tech/pla-smart-contract-main)
 
 
 ## Overview
@@ -14,12 +14,12 @@ This folder contains the Haskell / Plutus smart contract modules used by the Pla
 Below are the files visible in the `SmartContract` directory and a short description for each.
 
 * **PCMint.hs** 
-(https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PCMint.hs)
+[https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PCMint.hs](https://github.com/AIQUANT-Tech/pla-smart-contract-main/blob/main/SmartContract/PCMint.hs)
 
   * Primary minting contract (Plutus validator or minting policy) for plastic credits/tokens. Entry points for mint operations and on-chain validation logic.
 
 * **PCMintV2.hs**
-(https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PCMintV2.hs)
+[https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PCMintV2.hs](https://github.com/AIQUANT-Tech/pla-smart-contract-main/blob/main/SmartContract/PCMintV2.hs)
 
   * Second version of the `PCMint` module. Likely contains fixes, improved validation, or an updated datum/redeemer layout and additional tests.
     
@@ -28,90 +28,90 @@ Below are the files visible in the `SmartContract` directory and a short descrip
   addr_test1wpahup46jmrujnlamnuv3ldwmeag8czvmz95rlthdunfepcew7fpu 
 
 * **PlastikBurner.hs**
-(`https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PlastikBurner.hs`)
+https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PlastikBurner.hs
 
   * Burning policy/validator for retiring tokens or credits. Responsible for validating and authorizing token burn operations.
 
     #### Test Cases Written: 
-  https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContractTest/TestPlastikBurner.hs
+  https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContractTest/TestPlastikBurner.hs
 
   Smart Contract Address in Test Net (PreProd) 
   
   addr_test1wq8edj8x3rza25v5r0xxr6k0xw2e58jsdnmanuwz9ctzlysyevp7x
 
 * **PlastikCryptoV2.hs**
-(https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PlastikCryptoV2.hs)
+https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PlastikCryptoV2.hs
 
   * Cryptographic helpers, signature verification, voucher verification functions and utilities used by other validators. (E.g., verifying seller vouchers, price signatures, or PRG vouchers.)
 
    #### Test Cases Written: 
-  https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContractTest/PlastikCryptoV2Test.hs
+  https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContractTest/PlastikCryptoV2Test.hs
 
   Smart Contract Address in Test Net (PreProd) 
   
   addr_test1wpyxpyn302xjurwsc2cv4nqmgv8whcj52uycp3lvp3l6jxct36md8
 
 * **PlastikPRGV3OnChain.hs**
-(https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PlastikPRGV3OnChain.hs)
+https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PlastikPRGV3OnChain.hs
 
   * On-chain portion of a PRG (pseudo-random generator) or PRG-backed voucher/claim logic (version 3). Contains validators that run fully on-chain.
 
    #### Test Cases Written: 
-  https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContractTest/TestPlastikPRGV3OnChain.hs
+  https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContractTest/TestPlastikPRGV3OnChain.hs
   
   Smart Contract Address in Test Net (PreProd) 
   
   addr_test1wpahup46jmrujnlamnuv3ldwmeag8czvmz95rlthdunfepcew7fpu 
 
 * **PlastikRecoveryProjects.hs**
-(https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PlastikRecoveryProjects.hs)
+https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PlastikRecoveryProjects.hs
 
   * Validator or helper code to recover or manage project state on-chain. Might include recovery flows or project-level state transitions.
 
    #### Test Cases Written: 
-  https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContractTest/TestPlastikRecoveryProjects.hs
+  https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContractTest/TestPlastikRecoveryProjects.hs
   
   Smart Contract Address in Test Net (PreProd) 
   
   addr_test1wqex6he42tmmptjxmadyudj6p6r6y9j2u4gnc8h69aum34cjyw66t 
 
 * **PlastikRoleV2.hs**
-(http://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PlastikRoleV2.hs)
+http://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PlastikRoleV2.hs
 
   * Role-based validator implementing roles and permissions (e.g., `GrantMinter`, `VerifyMinter`). Likely used to manage role assignment on-chain and ensure only authorized actions occur.
 
    #### Test Cases Written: 
-     https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContractTest/TestPlastikRoleV2.hs
+     https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContractTest/TestPlastikRoleV2.hs
   
   Smart Contract Address in Test Net (PreProd) 
   
   addr_test1wrkpklgh9grqn36pjtsvl206xuxvmjv2krh3wz33twzs2hqjc0hur
 
 * **PlastikTokenMint.hs**
-(https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/PlastikTokenMint.hs)
+https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/PlastikTokenMint.hs
 
   * Token minting policy that defines token issuance rules, supply constraints and policy scripts used for minting the main project token(s).
 
 
 * **VerifiedAccounts.hs**
-(`https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/VerifiedAccounts.h)
+https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/VerifiedAccounts.h
 
   * Helpers and on-chain checks for verified account flows — e.g. registry of verified recyclers/accounts, signature checks, or lookups.
 
   #### Test Cases Written: 
-    https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContractTest/TestVerifiedAccounts.hs
+    https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContractTest/TestVerifiedAccounts.hs
 
   Smart Contract Address in Test Net (PreProd) 
   
   addr_test1wr35kdkcknmk7vhvm3lq8t584k80zu3mdzs4aevp4xcc0ugl5qqlj 
 
 * **WhiteListSender.hs**
-(https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContract/WhiteListSender.hs)
+https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContract/WhiteListSender.hs
 
   * Utility or validator for performing whitelist-controlled sends, or for maintaining a whitelist of permitted senders/addresses.
 
   #### Test Cases Written: 
-    https://github.com/AIQUANT13/pla-smart-contract/blob/main/SmartContractTest/TestWhiteListSender.hs
+    https://github.com/AIQUANT13/pla-smart-contract-main/blob/main/SmartContractTest/TestWhiteListSender.hs
 
   Smart Contract Address in Test Net (PreProd) 
   
